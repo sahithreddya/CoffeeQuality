@@ -1,5 +1,5 @@
-# CoffeeQuality
-As an amateur in home brewing coffee, I am always fascinated by the amount of variables that affect the final cup of coffee. I came across a coffee dataset and started this project with the goal to get some insights into the factors that affect coffee quality.
+## Summary
+As an amateur in home brewing coffee, I am always fascinated by the amount of variables that affect the final cup of coffee. I came across a coffee dataset and started this project to get insights into the factors affecting coffee quality.
 <p align="center"><img src="https://dfamgkk1duyqq.cloudfront.net/wp-content/uploads/2020/04/farmer-picking-coffee-cherries.jpg.webp" width="50%" alt="coffee farmer collecting coffee fruit"/></p>
 
 ## Initial Dataset
@@ -7,23 +7,23 @@ As an amateur in home brewing coffee, I am always fascinated by the amount of va
 
 ## Exploratory Data Analysis
 ### Looking at data distribution for all numeric variables
-Most of the variables seem to have a healthy bell curve. The variables without bell curves will be looked at again after a correlation matrix is created. 
+Most of the variables have a healthy bell curve. The variables without bell curves will be looked at again after creating a correlation matrix. 
 <p align="center"><img src="https://github.com/user-attachments/assets/dfbae0c8-8b22-4913-ba27-dba8d72b6b61" width=600/></p>
 
 ### Visualizing Average Total Cup Points by Country
->_Total Cup Points_ is the value which tells us the quality of the coffee bean.
+>_Total Cup Points_ is the value that tells us the quality of the coffee bean.
 
-The average __Total Cup Points__ value for each country seems to be very close to each other. This is apparent in the __low Standard Deviation__ value seen above. This means that the overall quality of coffee in this dataset is towards the higher end. This also means that differentiating the quality between two cups will be a challenge for any _Q Grader_(a professional coffee taster).
+The average __Total Cup Points__ value for each country seems very close to each other. which is apparent in the __low Standard Deviation__ value seen above. This statistic may inform us that the overall quality of coffee in this dataset is on a higher end, which also means that differentiating the quality between two cups will be challenging for any _Q Grader_(a professional coffee taster).
 
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/04f270c0-692a-44c7-bf9c-dffeb0222f7c" width="45%"/><img src="https://github.com/user-attachments/assets/1eb2eb3b-a14c-4dc5-b601-25c16a38e296" width="45%"/></div>
 
-### Visualizing Average Altitude of each Country where Coffee is grown
-The average altitude of fields where coffee is grown is greatest in Vietnam and least in Taiwan.
+### Visualizing the Average Altitude of each Country where Coffee is grown
+The average altitude of fields where coffee is grown is most significant in Vietnam and least in Taiwan.
 
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/0def31e4-2fd2-4b93-abab-9e993b7d1a0c" width="45%"/><img src="https://github.com/user-attachments/assets/02bba2e6-3d5b-456b-b1da-0db54426c9ad" width="45%"/></div>
 
 ### Visualizing no. of Unique Coffee types from each country
-Interestingly, Taiwan has the most coffee types in this dataset by a mile. After doing some research, Taiwan is not even in the top 10 of most coffee producing nations in the world. This means it is important to keep in mind that the data in this dataset cannot be relied on for making general assumptions towards coffee quality.
+Interestingly, Taiwan has the most coffee types in this dataset by a mile. After doing some research, I found that Taiwan is not even among the top 10 coffee-producing nations in the world. Thus, it is important to keep in mind that the data in this dataset cannot be relied on to make general assumptions about coffee quality.
 
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/216e99c4-7317-4aba-9d41-d028ff418536" width="45%"/><img src="https://github.com/user-attachments/assets/1d4eb30d-e5bb-448f-988e-f690e9789c81" width="45%"/></div>
 
@@ -31,9 +31,9 @@ Interestingly, Taiwan has the most coffee types in this dataset by a mile. After
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/8c7c9456-1e8b-4aad-b1b7-e5e1497b1c65" width="45%"/></div>
 
 ### Visualizing the average coffee tasting factors for each of the above 10 countries
-It is seen in the below radar charts that __Ethiopia__ has the largest area of pentagon when it comes to the 5 tasting factors of coffee quality.
+It is seen in the below radar charts that __Ethiopia__ has the largest area of the pentagon when it comes to the five tasting factors of coffee quality.
 
->__Reading the Chart__: The value of each factor ranges from the center of the pentagon(lowest) to the extremeties of the pentagon(highest). The country having the most area of its pentagon would mean that the average tasting factor quality is the highest for the respective country.
+>__Reading the Chart__: The value of each factor ranges from the center of the pentagon (lowest) to the extremities of the pentagon (highest). The country having the most area of its pentagon would mean that the average tasting factor quality is the highest for the respective country.
 <div style="display: flex; flex-wrap:wrap ;justify-content: center" align="center">
   <img src="https://github.com/user-attachments/assets/7cd6b935-32b8-45c6-89e6-a6e0cc7f938f" width="20%"/>
   <img src="https://github.com/user-attachments/assets/17df2f1f-a001-4b1d-9947-b02938de6bcd" width="20%"/>
@@ -48,8 +48,8 @@ It is seen in the below radar charts that __Ethiopia__ has the largest area of p
 </div>
 
 ### A correlation matrix to predict Total Cup Points
-It is apparent with the below correlation matrix that Total Cup Points is positively affected by some factors.
-- The variables _Aroma, Flavor, Aftertaste, Acidity, Body, Balance,_ and _Overall_ positively have a strong positive correlation with __Total Cup Points__.
+It is apparent from the correlation matrix below that Total Cup Points are positively affected by some factors.
+- The variables _Aroma, Flavor, Aftertaste, Acidity, Body, Balance,_ and _Overall_ positively correlate positively with __Total Cup Points__.
 - The variables _Quakers_ and _Category Two Defects_ have a weak negative correlation __Total Cup Points__.
 <div style="display: flex; justify-content: center" align="center">
   <img src="https://github.com/user-attachments/assets/c86bd88c-9230-4404-8a4e-6750193a6140" width="70%"/>
@@ -67,7 +67,7 @@ It is apparent with the below correlation matrix that Total Cup Points is positi
   <img src="https://github.com/user-attachments/assets/fc4e9275-25f2-49fd-ae1c-27987438903c" width="30%"/>
 </div>
 
-- The R2 value is almost close to 1, indicating that the relationship of factors we've considered is very strong.
+- The R2 value is almost close to 1, indicating the relationship of factors we've considered is very strong.
 - The addition of _const_ variable shows the lack of relation to _Total Cup Points_ as its __coef__ and __std err__ values are very high - The R2 value is almost close to 1, indicating that the relationship of factors we've considered is very strong.
 - The addition of _const_ variable shows the lack of relation to _Total Cup Points_ as its __coef__ and __std err__ values are very high 
 
