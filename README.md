@@ -34,7 +34,7 @@ Interestingly, Taiwan has the most coffee types in this dataset by a mile. After
 It is seen in the below radar charts that __Ethiopia__ has the largest area of pentagon when it comes to the 5 tasting factors of coffee quality.
 
 >__Reading the Chart__: The value of each factor ranges from the center of the pentagon(lowest) to the extremeties of the pentagon(highest). The country having the most area of its pentagon would mean that the average tasting factor quality is the highest for the respective country.
-<div style="display: flex; justify-content: center" align="center">
+<div style="display: flex; flex-wrap:wrap ;justify-content: center" align="center">
   <img src="https://github.com/user-attachments/assets/7cd6b935-32b8-45c6-89e6-a6e0cc7f938f" width="20%"/>
   <img src="https://github.com/user-attachments/assets/17df2f1f-a001-4b1d-9947-b02938de6bcd" width="20%"/>
   <img src="https://github.com/user-attachments/assets/1b0597d3-2a54-4e13-8c85-09de617b76a9" width="20%"/>
@@ -74,7 +74,7 @@ It is apparent with the below correlation matrix that Total Cup Points is positi
 As expected from a 99% r2 score, the actual v/s predicted graph is almost a straight line.
 
 ***
-<div style="display: flex; justify-content: center" align="center">
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column" align="center">
   <h1>Thank you!</h1>
   <img src="https://i0.wp.com/blog.beangenius.com/wp-content/uploads/2015/05/giphy-1.gif" width="40%"/>
 </div>
