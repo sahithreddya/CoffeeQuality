@@ -2,13 +2,26 @@
 As an amateur in home brewing coffee, I am always fascinated by the amount of variables that affect the final cup of coffee. I came across a coffee dataset and started this project to get insights into the factors affecting coffee quality.
 <p align="center"><img src="https://dfamgkk1duyqq.cloudfront.net/wp-content/uploads/2020/04/farmer-picking-coffee-cherries.jpg.webp" width="50%" alt="coffee farmer collecting coffee fruit"/></p>
 
-## Initial Dataset
+</br>
+</br>
+
+
+## About the Dataset
+<p>The Coffee Quality Institute (CQI) is a non-profit organization that works to improve the quality and value of coffee worldwide. It was founded in 1996 and has its headquarters in California, USA. CQI's mission is to promote coffee quality through a range of activities that include research, training, and certification programs. The organization works with coffee growers, processors, roasters, and other stakeholders to improve coffee quality standards, promote sustainability, and support the development of the specialty coffee industry.</p>
+
+<p>CQI maintains a web database that serves as a resource for coffee professionals and enthusiasts who are interested in learning about coffee quality and sustainability. The database includes a range of information on coffee production, processing, and sensory evaluation. It also contains data on coffee genetics, soil types, and other factors that can affect coffee quality. This dataset was scraped from this CQI database to get all data related to arabica types of coffee beans.</p>
 <p align="center"><img src="https://github.com/user-attachments/assets/e645e57d-d423-44e6-8beb-d82903b8a6d0"/></p>
+
+</br>
+</br>
 
 ## Exploratory Data Analysis
 ### Looking at data distribution for all numeric variables
 Most of the variables have a healthy bell curve. The variables without bell curves will be looked at again after creating a correlation matrix. 
 <p align="center"><img src="https://github.com/user-attachments/assets/dfbae0c8-8b22-4913-ba27-dba8d72b6b61" width=600/></p>
+
+</br>
+</br>
 
 ### Visualizing Average Total Cup Points by Country
 >_Total Cup Points_ is the value that tells us the quality of the coffee bean.
@@ -17,18 +30,28 @@ The average __Total Cup Points__ value for each country seems very close to each
 
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/04f270c0-692a-44c7-bf9c-dffeb0222f7c" width="45%"/><img src="https://github.com/user-attachments/assets/1eb2eb3b-a14c-4dc5-b601-25c16a38e296" width="45%"/></div>
 
+</br>
+
 ### Visualizing the Average Altitude of each Country where Coffee is grown
 The average altitude of fields where coffee is grown is most significant in Vietnam and least in Taiwan.
 
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/0def31e4-2fd2-4b93-abab-9e993b7d1a0c" width="45%"/><img src="https://github.com/user-attachments/assets/02bba2e6-3d5b-456b-b1da-0db54426c9ad" width="45%"/></div>
+
+</br>
 
 ### Visualizing no. of Unique Coffee types from each country
 Interestingly, Taiwan has the most coffee types in this dataset by a mile. After doing some research, I found that Taiwan is not even among the top 10 coffee-producing nations in the world. Thus, it is important to keep in mind that the data in this dataset cannot be relied on to make general assumptions about coffee quality.
 
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/216e99c4-7317-4aba-9d41-d028ff418536" width="45%"/><img src="https://github.com/user-attachments/assets/1d4eb30d-e5bb-448f-988e-f690e9789c81" width="45%"/></div>
 
+</br>
+</br>
+
 ### Looking at the top 10 countries in this dataset with the most coffee production
 <div style="display: flex; justify-content: center" align="center"><img src="https://github.com/user-attachments/assets/8c7c9456-1e8b-4aad-b1b7-e5e1497b1c65" width="45%"/></div>
+
+</br>
+</br>
 
 ### Visualizing the average coffee tasting factors for each of the above 10 countries
 It is seen in the below radar charts that __Ethiopia__ has the largest area of the pentagon when it comes to the five tasting factors of coffee quality.
@@ -47,6 +70,9 @@ It is seen in the below radar charts that __Ethiopia__ has the largest area of t
   <img src="https://github.com/user-attachments/assets/dc1c564b-4095-40dd-a64a-d5aca9c3d2e1" width="20%"/>
 </div>
 
+</br>
+</br>
+
 ### A correlation matrix to predict Total Cup Points
 It is apparent from the correlation matrix below that Total Cup Points are positively affected by some factors.
 - The variables _Aroma, Flavor, Aftertaste, Acidity, Body, Balance,_ and _Overall_ positively correlate positively with __Total Cup Points__.
@@ -54,6 +80,9 @@ It is apparent from the correlation matrix below that Total Cup Points are posit
 <div style="display: flex; justify-content: center" align="center">
   <img src="https://github.com/user-attachments/assets/c86bd88c-9230-4404-8a4e-6750193a6140" width="70%"/>
 </div>
+
+</br>
+</br>
 
 ## Predicting Total Cup Points using Linear Regression
 ### Plotting the attribute relation with Total Cup Points
