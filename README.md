@@ -1,6 +1,6 @@
 ## Summary
 As an amateur in home brewing coffee, I am always fascinated by the amount of variables that affect the final cup of coffee. I came across a coffee dataset and started this project to get insights into the factors affecting coffee quality.
-<p align="center"><img src="https://dfamgkk1duyqq.cloudfront.net/wp-content/uploads/2020/04/farmer-picking-coffee-cherries.jpg.webp" width="50%" alt="coffee farmer collecting coffee fruit"/></p>
+<p align="center"><img src="https://www.drivencoffee.com/cdn/shop/articles/harvesting-coffee-cherries.jpg?v=1722961231&width=1500" width="50%" alt="coffee farmer collecting coffee fruit"/></p>
 
 </br>
 </br>
